@@ -7,7 +7,7 @@ about:
   head: fa44e51
   archived: false
   latestVersion: v14.0.0
-  collectedAt: 2026-09-04T19:26:01Z
+  collectedAt: 2026-09-04T21:07:08Z
 timeline:
   created: 2015-05-26
   lastCommit: 2026-05-06
@@ -15,7 +15,7 @@ timeline:
 popularity:
   star: 14880
   watcher: 46
-  fork: 700
+  fork: 701
   release: 64
   contributor: 312
   pullRequest: 843
@@ -83,6 +83,49 @@ total:
   openIssue: 0
   commit: 1115
 ---
+path: /home/runner/.x-repo/github.com/XAMPPRocky/tokei
+collectedAt: 2026-09-04T21:07:10Z
+loc:
+  Rust:
+    code: 3859
+    comments: 136
+    blanks: 586
+    files: 24
+  Json:
+    code: 2119
+    comments: 0
+    blanks: 0
+    files: 1
+  Toml:
+    code: 111
+    comments: 5
+    blanks: 17
+    files: 3
+  Sh:
+    code: 38
+    comments: 1
+    blanks: 10
+    files: 1
+  Bash:
+    code: 30
+    comments: 10
+    blanks: 8
+    files: 4
+  Html:
+    code: 9
+    comments: 1
+    blanks: 2
+    files: 1
+  Markdown:
+    code: 0
+    comments: 1393
+    blanks: 330
+    files: 5
+total:
+  code: 6248
+  comments: 1888
+  blanks: 1009
+  files: 39
 ---
 date: "2026-08-24"
 repo:
