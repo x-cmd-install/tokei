@@ -7,7 +7,7 @@ about:
   latestVersion: "v15.0.0"
   latestRelease: "v15.0.0"
   latestPrerelease: "v12.0.4a"
-  collectedAt: 2026-09-10T20:58:03Z
+  collectedAt: 2026-09-10T22:50:54Z
 timeline:
   created: 2015-05-26
   lastCommit: 2026-09-06
@@ -15,7 +15,7 @@ timeline:
   lastRelease: 2026-09-06
   lastPrerelease: 2020-08-16
 popularity:
-  star: 14899
+  star: 14900
   watcher: 47
   fork: 701
   release: 65
@@ -86,7 +86,7 @@ total:
   commit: 1119
 ---
 path: /home/runner/.x-repo/github.com/XAMPPRocky/tokei
-collectedAt: 2026-09-10T20:58:04Z
+collectedAt: 2026-09-10T22:50:55Z
 loc:
   Rust:
     code: 3859
