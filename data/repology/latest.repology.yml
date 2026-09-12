@@ -1,15 +1,37 @@
-- repo: pkgsrc_current
-  srcname: devel/tokei
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: tokei
   binname: tokei
-  visiblename: devel/tokei
+  visiblename: tokei
   version: 15.0.0
-  origversion: null
+  origversion: 15.0.0-1
   status: newest
-  summary: Displays statistics about code
+  summary: A blazingly fast CLOC (Count Lines Of Code) program
+  licenses:
+    - MIT
+    - Apache
+- repo: homebrew
+  srcname: tokei
+  visiblename: tokei
+  version: HEAD
+  origversion: null
+  status: rolling
+  summary: Program that allows you to count code, quickly
+- repo: debian_14
+  subrepo: forky/main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
   maintainers:
-    - pkgsrc-users@netbsd.org
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
   categories:
-    - devel
+    - misc
 - repo: alpine_3_17
   subrepo: community
   srcname: tokei
@@ -127,18 +149,6 @@
     - fcolista@alpinelinux.org
   licenses:
     - MIT AND Apache-2.0
-- repo: pkgsrc_2026_1
-  srcname: devel/tokei
-  binname: tokei
-  visiblename: devel/tokei
-  version: 14.0.0
-  origversion: null
-  status: outdated
-  summary: Displays statistics about code
-  maintainers:
-    - pkgsrc-users@netbsd.org
-  categories:
-    - devel
 - repo: alt_p11
   srcname: tokei
   binnames:
@@ -183,6 +193,21 @@
     - fallback-mnt-aosc@repology
   categories:
     - devel
+- repo: kali_rolling
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 14.0.0
+  origversion: 14.0.0-2
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
+  categories:
+    - misc
 - repo: arch
   subrepo: extra
   srcname: tokei
@@ -258,21 +283,16 @@
     - sylvestre@debian.org
   categories:
     - misc
-- repo: debian_14
-  subrepo: forky/main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 14.0.0
-  origversion: 14.0.0-2
-  status: outdated
+- repo: termux
+  srcname: tokei
+  binname: tokei
+  visiblename: tokei
+  version: 15.0.0
+  origversion: null
+  status: newest
+  summary: A blazingly fast CLOC (Count Lines Of Code) program
   maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - ncts@debian.org
-  categories:
-    - misc
+    - termux@github
 - repo: debian_unstable
   subrepo: sid/main
   srcname: rust-tokei
@@ -314,21 +334,6 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 12.1.2
-  origversion: 12.1.2-6
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - sylvestre@debian.org
-  categories:
-    - rust
 - repo: epel_9
   srcname: rust-tokei
   binnames:
@@ -371,6 +376,15 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: kiss_community
+  subrepo: community
+  srcname: tokei
+  visiblename: tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  maintainers:
+    - dylan.araps@gmail.com
 - repo: exherbo
   subrepo: CleverCloud
   srcname: app-misc/tokei
@@ -515,21 +529,6 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
-- repo: raspbian_stable
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 12.1.2
-  origversion: 12.1.2-6
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - sylvestre@debian.org
-  categories:
-    - misc
 - repo: fedora_42
   subrepo: release
   srcname: rust-tokei
@@ -570,6 +569,52 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: msys2_clang64
+  srcname: mingw-w64-tokei
+  binname: mingw-w64-clang-x86_64-tokei
+  visiblename: mingw-w64-clang-x86_64-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  summary: A blazingly fast Count Lines of Code program (mingw-w64)
+  licenses:
+    - spdx:Apache-2.0 OR MIT
+- repo: msys2_clangarm64
+  srcname: mingw-w64-tokei
+  binname: mingw-w64-clang-aarch64-tokei
+  visiblename: mingw-w64-clang-aarch64-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  summary: A blazingly fast Count Lines of Code program (mingw-w64)
+  licenses:
+    - spdx:Apache-2.0 OR MIT
+- repo: liguros_stable
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 12.1.1
+  origversion: null
+  status: legacy
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+  categories:
+    - dev-util
+- repo: liguros_stable
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+  categories:
+    - dev-util
 - repo: fedora_43
   subrepo: release
   srcname: rust-tokei
@@ -701,6 +746,19 @@
     - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
   categories:
     - dev-util
+- repo: liguros_develop
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 12.1.2
+  origversion: null
+  status: legacy
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+  categories:
+    - dev-util
 - repo: gentoo_ovl_guru
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -727,21 +785,6 @@
     - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
   categories:
     - dev-util
-- repo: raspbian_testing
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 14.0.0
-  origversion: 14.0.0-2
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - ncts@debian.org
-  categories:
-    - misc
 - repo: gentoo_ovl_guru
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -770,63 +813,6 @@
   origversion: null
   status: newest
   summary: Program that allows you to count code, quickly
-- repo: homebrew
-  srcname: tokei
-  visiblename: tokei
-  version: HEAD
-  origversion: null
-  status: rolling
-  summary: Program that allows you to count code, quickly
-- repo: kali_rolling
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 14.0.0
-  origversion: 14.0.0-2
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - ncts@debian.org
-  categories:
-    - misc
-- repo: kiss_community
-  subrepo: community
-  srcname: tokei
-  visiblename: tokei
-  version: 12.1.2
-  origversion: null
-  status: outdated
-  maintainers:
-    - dylan.araps@gmail.com
-- repo: liguros_stable
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 12.1.1
-  origversion: null
-  status: legacy
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
-  categories:
-    - dev-util
-- repo: liguros_stable
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 12.1.2
-  origversion: null
-  status: outdated
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
-  categories:
-    - dev-util
 - repo: liguros_develop
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -866,34 +852,6 @@
     - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
   categories:
     - dev-util
-- repo: parrot
-  subrepo: parrot/main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 12.1.2
-  origversion: 12.1.2-6
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - sylvestre@debian.org
-  categories:
-    - misc
-- repo: liguros_develop
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 12.1.2
-  origversion: null
-  status: legacy
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
-  categories:
-    - dev-util
 - repo: macports
   srcname: devel/tokei
   binname: tokei
@@ -925,18 +883,6 @@
   srcname: tokei
   binname: tokei
   visiblename: tokei
-  version: 14.0.0
-  origversion: 14.0.0-1
-  status: outdated
-  summary: A blazingly fast CLOC (Count Lines Of Code) program
-  licenses:
-    - MIT
-    - Apache
-- repo: manjaro_unstable
-  subrepo: extra
-  srcname: tokei
-  binname: tokei
-  visiblename: tokei
   version: 15.0.0
   origversion: 15.0.0-1
   status: newest
@@ -944,45 +890,13 @@
   licenses:
     - MIT
     - Apache
-- repo: msys2_clang64
-  srcname: mingw-w64-tokei
-  binname: mingw-w64-clang-x86_64-tokei
-  visiblename: mingw-w64-clang-x86_64-tokei
-  version: 14.0.0
-  origversion: 14.0.0-1
-  status: outdated
-  summary: A blazingly fast Count Lines of Code program (mingw-w64)
-  licenses:
-    - spdx:Apache-2.0 OR MIT
-- repo: pkgsrc_2026_2
-  srcname: devel/tokei
-  binname: tokei
-  visiblename: devel/tokei
-  version: 14.0.0
-  origversion: null
-  status: outdated
-  summary: Displays statistics about code
-  maintainers:
-    - pkgsrc-users@netbsd.org
-  categories:
-    - devel
-- repo: msys2_clangarm64
-  srcname: mingw-w64-tokei
-  binname: mingw-w64-clang-aarch64-tokei
-  visiblename: mingw-w64-clang-aarch64-tokei
-  version: 14.0.0
-  origversion: 14.0.0-1
-  status: outdated
-  summary: A blazingly fast Count Lines of Code program (mingw-w64)
-  licenses:
-    - spdx:Apache-2.0 OR MIT
 - repo: msys2_ucrt64
   srcname: mingw-w64-tokei
   binname: mingw-w64-ucrt-x86_64-tokei
   visiblename: mingw-w64-ucrt-x86_64-tokei
-  version: 14.0.0
-  origversion: 14.0.0-1
-  status: outdated
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
   summary: A blazingly fast Count Lines of Code program (mingw-w64)
   licenses:
     - spdx:Apache-2.0 OR MIT
@@ -1126,6 +1040,102 @@
     - sylvestre@debian.org
   categories:
     - misc
+- repo: parrot
+  subrepo: parrot/main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 12.1.2
+  origversion: 12.1.2-6
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - sylvestre@debian.org
+  categories:
+    - misc
+- repo: pkgsrc_2026_1
+  srcname: devel/tokei
+  binname: tokei
+  visiblename: devel/tokei
+  version: 14.0.0
+  origversion: null
+  status: outdated
+  summary: Displays statistics about code
+  maintainers:
+    - pkgsrc-users@netbsd.org
+  categories:
+    - devel
+- repo: pkgsrc_2026_2
+  srcname: devel/tokei
+  binname: tokei
+  visiblename: devel/tokei
+  version: 14.0.0
+  origversion: null
+  status: outdated
+  summary: Displays statistics about code
+  maintainers:
+    - pkgsrc-users@netbsd.org
+  categories:
+    - devel
+- repo: pkgsrc_current
+  srcname: devel/tokei
+  binname: tokei
+  visiblename: devel/tokei
+  version: 15.0.0
+  origversion: null
+  status: newest
+  summary: Displays statistics about code
+  maintainers:
+    - pkgsrc-users@netbsd.org
+  categories:
+    - devel
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 12.1.2
+  origversion: 12.1.2-6
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - sylvestre@debian.org
+  categories:
+    - rust
+- repo: raspbian_stable
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 12.1.2
+  origversion: 12.1.2-6
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - sylvestre@debian.org
+  categories:
+    - misc
+- repo: raspbian_testing
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 14.0.0
+  origversion: 14.0.0-2
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
+  categories:
+    - misc
 - repo: scoop
   subrepo: main
   binname: tokei
@@ -1157,16 +1167,6 @@
     - anton@samokhvalov.xyz
   categories:
     - bin
-- repo: termux
-  srcname: tokei
-  binname: tokei
-  visiblename: tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  summary: A blazingly fast CLOC (Count Lines Of Code) program
-  maintainers:
-    - termux@github
 - repo: ubuntu_25_04
   subrepo: plucky/universe
   srcname: rust-tokei
