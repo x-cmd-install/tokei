@@ -46,7 +46,7 @@ x install tokei
 
 ## 流行度
 
-- **Star**: 14,908 · **Fork**: 703 · **开放 issue**: 0 · **贡献者**: 313
+- **Star**: 14,909 · **Fork**: 703 · **开放 issue**: 0 · **贡献者**: 313
 
 ## 累计统计
 
@@ -56,30 +56,12 @@ x install tokei
 
 | 时间窗口 | 起始 | 发布 | 已合并 PR | 开放 PR | 已关闭 issue | 开放 issue | 提交 |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-14 | 1 | 0 | 4 | 0 | 0 | 2 |
-| last60d | 2026-07-15 | 1 | 0 | 8 | 0 | 0 | 2 |
-| 90d | 2026-06-15 | 1 | 0 | 9 | 0 | 0 | 2 |
-| last180d | 2026-03-17 | 1 | 2 | 22 | 0 | 0 | 3 |
-| 360d | 2025-09-18 | 3 | 21 | 39 | 0 | 0 | 25 |
-| last720d | 2024-09-23 | 7 | 43 | 74 | 0 | 0 | 58 |
-
-## 发行版状态
-
-在 [repology.org](https://repology.org/project/tokei) 上共有 **92** 个发行版报告此项目。**20** 个 ✅ 已是最新上游版本，**58** 个 ⚠️ 使用旧版本。
-
-| 发行版 | 版本 | 状态 |
-|--------|------|------|
-| Debian unstable | `15.0.0` | ✅ latest |
-| Debian 14 | `15.0.0` | ✅ latest |
-| Debian 13 | `12.1.2` | ⚠️ outdated |
-| Ubuntu 26.04 LTS | `13.0.0` | ⚠️ outdated |
-| Arch | `15.0.0` | ✅ latest |
-| Homebrew | `15.0.0` | ✅ latest |
-| Fedora rawhide | `14.0.0` | ⚠️ outdated |
-| Nix unstable | `15.0.0` | ✅ latest |
-| Void | `15.0.0` | ✅ latest |
-| Alpine edge | `14.0.0` | ⚠️ outdated |
-| openSUSE Tumbleweed | `14.0.0` | ⚠️ outdated |
+| 30d | 2026-08-15 | 1 | 0 | 3 | 0 | 0 | 2 |
+| last60d | 2026-07-16 | 1 | 0 | 8 | 0 | 0 | 2 |
+| 90d | 2026-06-16 | 1 | 0 | 9 | 0 | 0 | 2 |
+| last180d | 2026-03-18 | 1 | 2 | 22 | 0 | 0 | 3 |
+| 360d | 2025-09-19 | 3 | 21 | 39 | 0 | 0 | 23 |
+| last720d | 2024-09-24 | 7 | 43 | 74 | 0 | 0 | 58 |
 
 ## 改进这些数据
 
@@ -90,4 +72,4 @@ tokei 的安装元数据由 [x-cmd/install](https://github.com/x-cmd/install) �
 
 本页面的数据（card / loc / scorecard / release）由 [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) 自动采集，每日重新生成。**安装行为**（版本选择、平台差异、依赖处理）的改进应提交到上游索引。
 
-_数据快照: `data/card/260913.yml` · 2026-09-13T05:19:19Z._
+_数据快照: `data/card/260914.yml` · 2026-09-14T05:32:02Z._
