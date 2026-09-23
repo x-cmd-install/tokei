@@ -4,7 +4,7 @@
 
 Count your code, quickly.
 
-[![x-cmd/install — tokei Code Quality Monitoring Repo Card](https://repo.x-cmd.io/tokei.svg)](https://x-cmd.com/install/tokei)
+[![x-cmd/install — tokei Code Quality Monitoring Repo Card](https://x-cmd.com/repo-card/tokei.svg)](https://x-cmd.com/install/tokei)
 
 ## Install
 
@@ -46,22 +46,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 14,934 · **Forks**: 705 · **Open issues**: 0 · **Contributors**: 313
+- **Stars**: 14,932 · **Forks**: 707 · **Open issues**: 0 · **Contributors**: 313
 
 ## Totals (cumulative)
 
-- **Releases**: 65 · **Merged PRs**: 601 · **Open PRs**: 91 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 1119
+- **Releases**: 65 · **Merged PRs**: 601 · **Open PRs**: 93 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 1119
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-08-23 | 1 | 0 | 5 | 0 | 0 | 2 |
-| last60d | 2026-07-24 | 1 | 0 | 10 | 0 | 0 | 2 |
-| 90d | 2026-06-24 | 1 | 0 | 10 | 0 | 0 | 2 |
-| last180d | 2026-03-26 | 1 | 2 | 22 | 0 | 0 | 3 |
-| 360d | 2025-09-27 | 3 | 21 | 40 | 0 | 0 | 23 |
-| last720d | 2024-10-02 | 7 | 41 | 76 | 0 | 0 | 50 |
+| 30d | 2026-08-24 | 1 | 0 | 7 | 0 | 0 | 2 |
+| last60d | 2026-07-25 | 1 | 0 | 12 | 0 | 0 | 2 |
+| 90d | 2026-06-25 | 1 | 0 | 12 | 0 | 0 | 2 |
+| last180d | 2026-03-27 | 1 | 2 | 22 | 0 | 0 | 3 |
+| 360d | 2025-09-28 | 3 | 21 | 42 | 0 | 0 | 23 |
+| last720d | 2024-10-03 | 7 | 41 | 78 | 0 | 0 | 50 |
 
 ## Improve this data
 
@@ -72,4 +72,4 @@ Install metadata for tokei lives in the [x-cmd/install](https://github.com/x-cmd
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/260922.yml` · 2026-09-22T05:34:24Z._
+_Snapshot: `data/card/260923.yml` · 2026-09-23T05:28:27Z._
