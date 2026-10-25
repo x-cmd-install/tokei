@@ -46,7 +46,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 15,011 · **Forks**: 713 · **Open issues**: 0 · **Contributors**: 313
+- **Stars**: 15,013 · **Forks**: 713 · **Open issues**: 0 · **Contributors**: 313
 
 ## Totals (cumulative)
 
@@ -56,12 +56,12 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-09-24 | 0 | 0 | 5 | 0 | 0 | 0 |
-| last60d | 2026-08-25 | 1 | 0 | 11 | 0 | 0 | 2 |
-| 90d | 2026-07-26 | 1 | 0 | 16 | 0 | 0 | 2 |
-| last180d | 2026-04-27 | 1 | 1 | 23 | 0 | 0 | 3 |
-| 360d | 2025-10-29 | 3 | 21 | 43 | 0 | 0 | 23 |
-| last720d | 2024-11-03 | 6 | 37 | 80 | 0 | 0 | 45 |
+| 30d | 2026-09-25 | 0 | 0 | 5 | 0 | 0 | 0 |
+| last60d | 2026-08-26 | 1 | 0 | 11 | 0 | 0 | 2 |
+| 90d | 2026-07-27 | 1 | 0 | 16 | 0 | 0 | 2 |
+| last180d | 2026-04-28 | 1 | 1 | 22 | 0 | 0 | 3 |
+| 360d | 2025-10-30 | 3 | 21 | 43 | 0 | 0 | 23 |
+| last720d | 2024-11-04 | 6 | 37 | 80 | 0 | 0 | 45 |
 
 ## Distribution status
 
@@ -90,4 +90,4 @@ Install metadata for tokei lives in the [x-cmd/install](https://github.com/x-cmd
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261024.yml` · 2026-10-24T05:03:34Z._
+_Snapshot: `data/card/261025.yml` · 2026-10-25T05:05:36Z._
