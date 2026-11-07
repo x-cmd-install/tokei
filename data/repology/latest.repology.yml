@@ -1,3 +1,25 @@
+- repo: wikidata
+  srcname: Q107028400
+  visiblename: Tokei
+  version: 15.0.0
+  origversion: null
+  status: newest
+  summary: blazingly fast CLOC program
+  licenses:
+    - Apache Software License 2.0
+    - MIT License
+- repo: manjaro_unstable
+  subrepo: extra
+  srcname: tokei
+  binname: tokei
+  visiblename: tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  summary: A blazingly fast CLOC (Count Lines Of Code) program
+  licenses:
+    - MIT
+    - Apache
 - repo: wakemeops
   subrepo: terminal
   binname: tokei
@@ -243,16 +265,6 @@
     - sylvestre@debian.org
   categories:
     - misc
-- repo: wikidata
-  srcname: Q107028400
-  visiblename: Tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  summary: blazingly fast CLOC program
-  licenses:
-    - Apache Software License 2.0
-    - MIT License
 - repo: debian_14
   subrepo: forky/main
   srcname: rust-tokei
@@ -387,6 +399,21 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: kali_rolling
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
+  categories:
+    - misc
 - repo: fedora_39
   subrepo: updates
   srcname: rust-tokei
@@ -495,6 +522,15 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: wakemeops
+  subrepo: terminal
+  binname: tokei
+  visiblename: tokei
+  version: 13.0.0-alpha0
+  origversion: 13.0.0-alpha.0-2~ops2deb
+  status: outdated
+  maintainers:
+    - ops2deb@upciti.com
 - repo: fedora_42
   subrepo: release
   srcname: rust-tokei
@@ -619,6 +655,28 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: liguros_develop
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 15.0.0
+  origversion: null
+  status: newest
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
+  categories:
+    - dev-util
+- repo: kiss_community
+  subrepo: community
+  srcname: tokei
+  visiblename: tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  maintainers:
+    - dylan.araps@gmail.com
 - repo: fedora_rawhide
   subrepo: development
   srcname: rust-tokei
@@ -666,6 +724,18 @@
     - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
   categories:
     - dev-util
+- repo: nix_stable_26_05
+  srcname: tokei
+  visiblename: tokei
+  version: 14.0.0
+  origversion: null
+  status: outdated
+  summary: Count your code, quickly
+  maintainers:
+    - defelo@github
+  licenses:
+    - Apache-2.0
+    - MIT
 - repo: gentoo_ovl_guru
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -679,51 +749,6 @@
     - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
   categories:
     - dev-util
-- repo: msys2_clangarm64
-  srcname: mingw-w64-tokei
-  binname: mingw-w64-clang-aarch64-tokei
-  visiblename: mingw-w64-clang-aarch64-tokei
-  version: 15.0.0
-  origversion: 15.0.0-1
-  status: newest
-  summary: A blazingly fast Count Lines of Code program (mingw-w64)
-  licenses:
-    - spdx:Apache-2.0 OR MIT
-- repo: msys2_ucrt64
-  srcname: mingw-w64-tokei
-  binname: mingw-w64-ucrt-x86_64-tokei
-  visiblename: mingw-w64-ucrt-x86_64-tokei
-  version: 15.0.0
-  origversion: 15.0.0-1
-  status: newest
-  summary: A blazingly fast Count Lines of Code program (mingw-w64)
-  licenses:
-    - spdx:Apache-2.0 OR MIT
-- repo: nix_stable_24_05
-  srcname: tokei
-  visiblename: tokei
-  version: 12.1.2
-  origversion: null
-  status: outdated
-  summary: A program that allows you to count your code, quickly
-  maintainers:
-    - gebner@gebner.org
-    - lily@sb.org
-  licenses:
-    - Apache-2.0
-    - MIT
-- repo: nix_stable_24_11
-  srcname: tokei
-  visiblename: tokei
-  version: 12.1.2
-  origversion: null
-  status: outdated
-  summary: Program that allows you to count your code, quickly
-  maintainers:
-    - gebner@gebner.org
-  licenses:
-    - Apache-2.0
-    - MIT
 - repo: gentoo_ovl_guru
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -785,30 +810,6 @@
   origversion: null
   status: rolling
   summary: Program that allows you to count code, quickly
-- repo: kali_rolling
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 15.0.0
-  origversion: 15.0.0-1
-  status: newest
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - ncts@debian.org
-  categories:
-    - misc
-- repo: kiss_community
-  subrepo: community
-  srcname: tokei
-  visiblename: tokei
-  version: 12.1.2
-  origversion: null
-  status: outdated
-  maintainers:
-    - dylan.araps@gmail.com
 - repo: liguros_stable
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -835,42 +836,6 @@
     - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
   categories:
     - dev-util
-- repo: nix_stable_25_05
-  srcname: tokei
-  visiblename: tokei
-  version: 13.0.0-alpha9
-  origversion: 13.0.0-alpha.9
-  status: outdated
-  summary: Count your code, quickly
-  maintainers:
-    - defelo@github
-  licenses:
-    - Apache-2.0
-    - MIT
-- repo: nix_stable_25_11
-  srcname: tokei
-  visiblename: tokei
-  version: 13.0.0
-  origversion: null
-  status: outdated
-  summary: Count your code, quickly
-  maintainers:
-    - defelo@github
-  licenses:
-    - Apache-2.0
-    - MIT
-- repo: nix_stable_26_05
-  srcname: tokei
-  visiblename: tokei
-  version: 14.0.0
-  origversion: null
-  status: outdated
-  summary: Count your code, quickly
-  maintainers:
-    - defelo@github
-  licenses:
-    - Apache-2.0
-    - MIT
 - repo: nix_unstable
   srcname: tokei
   visiblename: tokei
@@ -932,19 +897,6 @@
     - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
   categories:
     - dev-util
-- repo: liguros_develop
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
-  categories:
-    - dev-util
 - repo: macports
   srcname: devel/tokei
   binname: tokei
@@ -964,26 +916,14 @@
   srcname: tokei
   binname: tokei
   visiblename: tokei
-  version: 12.1.2
-  origversion: 12.1.2-1
-  status: outdated
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
   summary: A blazingly fast CLOC (Count Lines Of Code) program
   licenses:
     - MIT
     - Apache
 - repo: manjaro_testing
-  subrepo: extra
-  srcname: tokei
-  binname: tokei
-  visiblename: tokei
-  version: 12.1.2
-  origversion: 12.1.2-1
-  status: outdated
-  summary: A blazingly fast CLOC (Count Lines Of Code) program
-  licenses:
-    - MIT
-    - Apache
-- repo: manjaro_unstable
   subrepo: extra
   srcname: tokei
   binname: tokei
@@ -1005,6 +945,75 @@
   summary: A blazingly fast Count Lines of Code program (mingw-w64)
   licenses:
     - spdx:Apache-2.0 OR MIT
+- repo: msys2_clangarm64
+  srcname: mingw-w64-tokei
+  binname: mingw-w64-clang-aarch64-tokei
+  visiblename: mingw-w64-clang-aarch64-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  summary: A blazingly fast Count Lines of Code program (mingw-w64)
+  licenses:
+    - spdx:Apache-2.0 OR MIT
+- repo: msys2_ucrt64
+  srcname: mingw-w64-tokei
+  binname: mingw-w64-ucrt-x86_64-tokei
+  visiblename: mingw-w64-ucrt-x86_64-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  summary: A blazingly fast Count Lines of Code program (mingw-w64)
+  licenses:
+    - spdx:Apache-2.0 OR MIT
+- repo: nix_stable_24_05
+  srcname: tokei
+  visiblename: tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  summary: A program that allows you to count your code, quickly
+  maintainers:
+    - gebner@gebner.org
+    - lily@sb.org
+  licenses:
+    - Apache-2.0
+    - MIT
+- repo: nix_stable_24_11
+  srcname: tokei
+  visiblename: tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  summary: Program that allows you to count your code, quickly
+  maintainers:
+    - gebner@gebner.org
+  licenses:
+    - Apache-2.0
+    - MIT
+- repo: nix_stable_25_05
+  srcname: tokei
+  visiblename: tokei
+  version: 13.0.0-alpha9
+  origversion: 13.0.0-alpha.9
+  status: outdated
+  summary: Count your code, quickly
+  maintainers:
+    - defelo@github
+  licenses:
+    - Apache-2.0
+    - MIT
+- repo: nix_stable_25_11
+  srcname: tokei
+  visiblename: tokei
+  version: 13.0.0
+  origversion: null
+  status: outdated
+  summary: Count your code, quickly
+  maintainers:
+    - defelo@github
+  licenses:
+    - Apache-2.0
+    - MIT
 - repo: opensuse_leap_15_5
   subrepo: main/oss
   srcname: tokei
@@ -1058,7 +1067,7 @@
     - MIT
     - Apache
 - repo: parrot
-  subrepo: parrot-updates/main
+  subrepo: parrot/main
   srcname: rust-tokei
   binnames:
     - librust-tokei-dev
@@ -1073,7 +1082,7 @@
   categories:
     - misc
 - repo: parrot
-  subrepo: parrot/main
+  subrepo: parrot-updates/main
   srcname: rust-tokei
   binnames:
     - librust-tokei-dev
@@ -1269,6 +1278,21 @@
     - ncts@debian.org
   categories:
     - universe/misc
+- repo: ubuntu_27_04
+  subrepo: tenacious/universe
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 14.0.0
+  origversion: 14.0.0-2
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
+  categories:
+    - universe/misc
 - repo: void_x86_64
   subrepo: x86_64
   srcname: tokei
@@ -1282,12 +1306,3 @@
     - orphan@voidlinux.org
   licenses:
     - Apache-2.0 OR MIT
-- repo: wakemeops
-  subrepo: terminal
-  binname: tokei
-  visiblename: tokei
-  version: 13.0.0-alpha0
-  origversion: 13.0.0-alpha.0-2~ops2deb
-  status: outdated
-  maintainers:
-    - ops2deb@upciti.com
