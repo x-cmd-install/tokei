@@ -46,22 +46,22 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 15,061 · **Forks**: 720 · **Open issues**: 0 · **Contributors**: 313
+- **Stars**: 15,076 · **Forks**: 722 · **Open issues**: 0 · **Contributors**: 313
 
 ## Totals (cumulative)
 
-- **Releases**: 65 · **Merged PRs**: 601 · **Open PRs**: 102 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 1119
+- **Releases**: 65 · **Merged PRs**: 601 · **Open PRs**: 105 · **Closed issues**: 0 · **Open issues**: 0 · **Commits**: 1119
 
 ## Recent activity
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-12 | 0 | 0 | 6 | 0 | 0 | 0 |
-| last60d | 2026-09-12 | 0 | 0 | 14 | 0 | 0 | 0 |
-| 90d | 2026-08-13 | 1 | 0 | 17 | 0 | 0 | 2 |
-| last180d | 2026-05-15 | 1 | 0 | 24 | 0 | 0 | 2 |
-| 360d | 2025-11-16 | 3 | 19 | 45 | 0 | 0 | 20 |
-| last720d | 2024-11-21 | 5 | 30 | 85 | 0 | 0 | 37 |
+| 30d | 2026-10-13 | 0 | 0 | 9 | 0 | 0 | 0 |
+| last60d | 2026-09-13 | 0 | 0 | 17 | 0 | 0 | 0 |
+| 90d | 2026-08-14 | 1 | 0 | 20 | 0 | 0 | 2 |
+| last180d | 2026-05-16 | 1 | 0 | 27 | 0 | 0 | 2 |
+| 360d | 2025-11-17 | 3 | 19 | 48 | 0 | 0 | 20 |
+| last720d | 2024-11-22 | 5 | 30 | 88 | 0 | 0 | 37 |
 
 ## Distribution status
 
@@ -74,7 +74,7 @@ Reported by **96** distros on [repology.org](https://repology.org/project/tokei)
 | Debian 13 | `12.1.2` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `13.0.0` | ⚠️ outdated |
 | Arch | `15.0.0` | ✅ latest |
-| Homebrew | `15.0.0` | ✅ latest |
+| Homebrew | `HEAD` | 🔄 rolling |
 | Fedora rawhide | `15.0.0` | ✅ latest |
 | Nix unstable | `15.0.0` | ✅ latest |
 | Void | `15.0.0` | ✅ latest |
@@ -90,4 +90,4 @@ Install metadata for tokei lives in the [x-cmd/install](https://github.com/x-cmd
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261111.yml` · 2026-11-11T06:53:05Z._
+_Snapshot: `data/card/261112.yml` · 2026-11-12T07:52:54Z._
