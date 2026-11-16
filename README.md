@@ -46,7 +46,7 @@ Lowest-scoring checks:
 
 ## Popularity
 
-- **Stars**: 15,070 · **Forks**: 724 · **Open issues**: 0 · **Contributors**: 313
+- **Stars**: 15,073 · **Forks**: 724 · **Open issues**: 0 · **Contributors**: 313
 
 ## Totals (cumulative)
 
@@ -56,16 +56,16 @@ Lowest-scoring checks:
 
 | Window | Since | Releases | Merged PRs | Open PRs | Closed issues | Open issues | Commits |
 |---|---|---:|---:|---:|---:|---:|---:|
-| 30d | 2026-10-16 | 0 | 0 | 9 | 0 | 0 | 0 |
-| last60d | 2026-09-16 | 0 | 0 | 17 | 0 | 0 | 0 |
-| 90d | 2026-08-17 | 1 | 0 | 19 | 0 | 0 | 2 |
-| last180d | 2026-05-19 | 1 | 0 | 26 | 0 | 0 | 2 |
-| 360d | 2025-11-20 | 3 | 18 | 48 | 0 | 0 | 20 |
-| last720d | 2024-11-25 | 5 | 30 | 86 | 0 | 0 | 37 |
+| 30d | 2026-10-17 | 0 | 0 | 9 | 0 | 0 | 0 |
+| last60d | 2026-09-17 | 0 | 0 | 17 | 0 | 0 | 0 |
+| 90d | 2026-08-18 | 1 | 0 | 19 | 0 | 0 | 2 |
+| last180d | 2026-05-20 | 1 | 0 | 26 | 0 | 0 | 2 |
+| 360d | 2025-11-21 | 3 | 18 | 48 | 0 | 0 | 18 |
+| last720d | 2024-11-26 | 5 | 29 | 86 | 0 | 0 | 37 |
 
 ## Distribution status
 
-Reported by **96** distros on [repology.org](https://repology.org/project/tokei). **35** are ✅ on the latest upstream release, **44** are ⚠️ on an older version.
+Reported by **95** distros on [repology.org](https://repology.org/project/tokei). **35** are ✅ on the latest upstream release, **43** are ⚠️ on an older version.
 
 | Distro | Version | Status |
 |--------|---------|--------|
@@ -74,7 +74,7 @@ Reported by **96** distros on [repology.org](https://repology.org/project/tokei)
 | Debian 13 | `12.1.2` | ⚠️ outdated |
 | Ubuntu 26.04 LTS | `13.0.0` | ⚠️ outdated |
 | Arch | `15.0.0` | ✅ latest |
-| Homebrew | `HEAD` | 🔄 rolling |
+| Homebrew | `15.0.0` | ✅ latest |
 | Fedora rawhide | `15.0.0` | ✅ latest |
 | Nix unstable | `15.0.0` | ✅ latest |
 | Void | `15.0.0` | ✅ latest |
@@ -90,4 +90,4 @@ Install metadata for tokei lives in the [x-cmd/install](https://github.com/x-cmd
 
 The data on this page (card / loc / scorecard / release) is auto-collected by [x-cmd-install-action](https://github.com/x-cmd-install/x-cmd-install-action) and is regenerated daily. Improvements to *install behaviour* (which version gets installed, platform-specific quirks, dependencies) belong upstream in the index.
 
-_Snapshot: `data/card/261115.yml` · 2026-11-15T06:59:46Z._
+_Snapshot: `data/card/261116.yml` · 2026-11-16T07:17:41Z._
