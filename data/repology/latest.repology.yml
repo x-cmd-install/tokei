@@ -1,38 +1,25 @@
-- repo: kiss_community
-  subrepo: community
-  srcname: tokei
-  visiblename: tokei
-  version: 12.1.2
+- repo: stalix
+  srcname: bin/tokei
+  binname: bin/tokei
+  visiblename: bin/tokei
+  version: 15.0.0
   origversion: null
-  status: outdated
+  status: newest
   maintainers:
-    - dylan.araps@gmail.com
-- repo: liguros_stable
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 12.1.1
-  origversion: null
-  status: legacy
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+    - anton@samokhvalov.xyz
   categories:
-    - dev-util
-- repo: liguros_stable
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 12.1.2
+    - bin
+- repo: stalix_dev
+  srcname: bin/tokei
+  binname: bin/tokei
+  visiblename: bin/tokei
+  version: 15.0.0
   origversion: null
-  status: outdated
-  summary: Count your code, quickly
+  status: newest
   maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+    - anton@samokhvalov.xyz
   categories:
-    - dev-util
+    - bin
 - repo: alpine_3_17
   subrepo: community
   srcname: tokei
@@ -194,6 +181,19 @@
     - fallback-mnt-aosc@repology
   categories:
     - devel
+- repo: gentoo_ovl_guru
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 12.1.2
+  origversion: null
+  status: legacy
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+  categories:
+    - dev-util
 - repo: arch
   subrepo: extra
   srcname: tokei
@@ -206,19 +206,6 @@
   licenses:
     - MIT
     - Apache
-- repo: liguros_develop
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 14.0.0
-  origversion: null
-  status: legacy
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
-  categories:
-    - dev-util
 - repo: aur
   srcname: tokei-git
   binname: tokei-git
@@ -359,21 +346,6 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
-- repo: kali_rolling
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 15.0.0
-  origversion: 15.0.0-1
-  status: newest
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - ncts@debian.org
-  categories:
-    - misc
 - repo: epel_10
   srcname: rust-tokei
   binnames:
@@ -431,6 +403,21 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: parrot
+  subrepo: parrot/main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 12.1.2
+  origversion: 12.1.2-6
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - sylvestre@debian.org
+  categories:
+    - misc
 - repo: fedora_39
   subrepo: updates
   srcname: rust-tokei
@@ -579,6 +566,19 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
+- repo: gentoo_ovl_guru
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: "9999"
+  origversion: null
+  status: rolling
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
+  categories:
+    - dev-util
 - repo: fedora_43
   subrepo: release
   srcname: rust-tokei
@@ -597,17 +597,6 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
-- repo: stalix_dev
-  srcname: bin/tokei
-  binname: bin/tokei
-  visiblename: bin/tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
 - repo: fedora_43
   subrepo: updates
   srcname: rust-tokei
@@ -674,18 +663,62 @@
     - MIT OR Apache-2.0
   categories:
     - Unspecified
-- repo: nix_stable_25_11
-  srcname: tokei
-  visiblename: tokei
-  version: 13.0.0
+- repo: fedora_45
+  subrepo: release
+  srcname: rust-tokei
+  binnames:
+    - tokei
+    - rust-tokei-devel
+    - rust-tokei+default-devel
+    - rust-tokei+all-devel
+    - rust-tokei+cbor-devel
+    - rust-tokei+cli-devel
+    - rust-tokei+yaml-devel
+    - rust-tokei-debuginfo
+    - rust-tokei-debugsource
+  visiblename: rust-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1.fc45
+  status: newest
+  summary: Count your code, quickly
+  licenses:
+    - MIT OR Apache-2.0
+  categories:
+    - Unspecified
+- repo: fedora_45
+  subrepo: updates
+  srcname: rust-tokei
+  binnames:
+    - tokei
+    - rust-tokei-devel
+    - rust-tokei+default-devel
+    - rust-tokei+all-devel
+    - rust-tokei+cbor-devel
+    - rust-tokei+cli-devel
+    - rust-tokei+yaml-devel
+    - rust-tokei-debuginfo
+    - rust-tokei-debugsource
+  visiblename: rust-tokei
+  version: 15.0.0
+  origversion: 15.0.0-2.fc45
+  status: newest
+  summary: Count your code, quickly
+  licenses:
+    - MIT OR Apache-2.0
+  categories:
+    - Unspecified
+- repo: pkgsrc_2026_2
+  srcname: devel/tokei
+  binname: tokei
+  visiblename: devel/tokei
+  version: 14.0.0
   origversion: null
   status: outdated
-  summary: Count your code, quickly
+  summary: Displays statistics about code
   maintainers:
-    - defelo@github
-  licenses:
-    - Apache-2.0
-    - MIT
+    - pkgsrc-users@netbsd.org
+  categories:
+    - devel
 - repo: fedora_rawhide
   subrepo: development
   srcname: rust-tokei
@@ -759,32 +792,6 @@
     - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
   categories:
     - dev-util
-- repo: gentoo_ovl_guru
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: 12.1.2
-  origversion: null
-  status: legacy
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
-  categories:
-    - dev-util
-- repo: gentoo_ovl_guru
-  srcname: dev-util/tokei
-  visiblename: dev-util/tokei
-  version: "9999"
-  origversion: null
-  status: rolling
-  summary: Count your code, quickly
-  maintainers:
-    - lo48576@hard-wi.red
-  licenses:
-    - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
-  categories:
-    - dev-util
 - repo: gnuguix
   srcname: tokei
   binname: tokei
@@ -807,6 +814,108 @@
   origversion: null
   status: rolling
   summary: Program that allows you to count code, quickly
+- repo: kali_rolling
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
+  categories:
+    - misc
+- repo: kiss_community
+  subrepo: community
+  srcname: tokei
+  visiblename: tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  maintainers:
+    - dylan.araps@gmail.com
+- repo: pkgsrc_2026_3
+  srcname: devel/tokei
+  binname: tokei
+  visiblename: devel/tokei
+  version: 15.0.0
+  origversion: null
+  status: newest
+  summary: Displays statistics about code
+  maintainers:
+    - pkgsrc-users@netbsd.org
+  categories:
+    - devel
+- repo: pkgsrc_current
+  srcname: devel/tokei
+  binname: tokei
+  visiblename: devel/tokei
+  version: 15.0.0
+  origversion: null
+  status: newest
+  summary: Displays statistics about code
+  maintainers:
+    - pkgsrc-users@netbsd.org
+  categories:
+    - devel
+- repo: pureos_landing
+  subrepo: landing/main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 12.1.2
+  origversion: 12.1.2-6
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - sylvestre@debian.org
+  categories:
+    - rust
+- repo: liguros_stable
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 12.1.1
+  origversion: null
+  status: legacy
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+  categories:
+    - dev-util
+- repo: liguros_stable
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
+  categories:
+    - dev-util
+- repo: liguros_develop
+  srcname: dev-util/tokei
+  visiblename: dev-util/tokei
+  version: 14.0.0
+  origversion: null
+  status: legacy
+  summary: Count your code, quickly
+  maintainers:
+    - lo48576@hard-wi.red
+  licenses:
+    - '|| ( Apache-2.0 MIT ) BSD ISC MIT MPL-2.0 Unicode-DFS-2016 || ( Apache-2.0 Boost-1.0 )'
+  categories:
+    - dev-util
 - repo: liguros_develop
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -846,6 +955,45 @@
     - BSD BSD-2 CC0-1.0 MIT ZLIB || ( Apache-2.0 Boost-1.0 )
   categories:
     - dev-util
+- repo: raspbian_stable
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 12.1.2
+  origversion: 12.1.2-6
+  status: outdated
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - sylvestre@debian.org
+  categories:
+    - misc
+- repo: raspbian_testing
+  subrepo: main
+  srcname: rust-tokei
+  binnames:
+    - librust-tokei-dev
+    - tokei
+  visiblename: rust-tokei
+  version: 15.0.0
+  origversion: 15.0.0-1
+  status: newest
+  maintainers:
+    - pkg-rust-maintainers@alioth-lists.debian.net
+    - ncts@debian.org
+  categories:
+    - misc
+- repo: scoop
+  subrepo: main
+  binname: tokei
+  visiblename: tokei
+  version: 12.1.2
+  origversion: null
+  status: outdated
+  licenses:
+    - Apache-2.0
 - repo: liguros_develop
   srcname: dev-util/tokei
   visiblename: dev-util/tokei
@@ -976,6 +1124,18 @@
   licenses:
     - Apache-2.0
     - MIT
+- repo: nix_stable_25_11
+  srcname: tokei
+  visiblename: tokei
+  version: 13.0.0
+  origversion: null
+  status: outdated
+  summary: Count your code, quickly
+  maintainers:
+    - defelo@github
+  licenses:
+    - Apache-2.0
+    - MIT
 - repo: nix_stable_26_05
   srcname: tokei
   visiblename: tokei
@@ -1064,122 +1224,6 @@
     - sylvestre@debian.org
   categories:
     - misc
-- repo: parrot
-  subrepo: parrot/main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 12.1.2
-  origversion: 12.1.2-6
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - sylvestre@debian.org
-  categories:
-    - misc
-- repo: pkgsrc_2026_2
-  srcname: devel/tokei
-  binname: tokei
-  visiblename: devel/tokei
-  version: 14.0.0
-  origversion: null
-  status: outdated
-  summary: Displays statistics about code
-  maintainers:
-    - pkgsrc-users@netbsd.org
-  categories:
-    - devel
-- repo: pkgsrc_2026_3
-  srcname: devel/tokei
-  binname: tokei
-  visiblename: devel/tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  summary: Displays statistics about code
-  maintainers:
-    - pkgsrc-users@netbsd.org
-  categories:
-    - devel
-- repo: pkgsrc_current
-  srcname: devel/tokei
-  binname: tokei
-  visiblename: devel/tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  summary: Displays statistics about code
-  maintainers:
-    - pkgsrc-users@netbsd.org
-  categories:
-    - devel
-- repo: pureos_landing
-  subrepo: landing/main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 12.1.2
-  origversion: 12.1.2-6
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - sylvestre@debian.org
-  categories:
-    - rust
-- repo: raspbian_stable
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 12.1.2
-  origversion: 12.1.2-6
-  status: outdated
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - sylvestre@debian.org
-  categories:
-    - misc
-- repo: raspbian_testing
-  subrepo: main
-  srcname: rust-tokei
-  binnames:
-    - librust-tokei-dev
-    - tokei
-  visiblename: rust-tokei
-  version: 15.0.0
-  origversion: 15.0.0-1
-  status: newest
-  maintainers:
-    - pkg-rust-maintainers@alioth-lists.debian.net
-    - ncts@debian.org
-  categories:
-    - misc
-- repo: scoop
-  subrepo: main
-  binname: tokei
-  visiblename: tokei
-  version: 12.1.2
-  origversion: null
-  status: outdated
-  licenses:
-    - Apache-2.0
-- repo: stalix
-  srcname: bin/tokei
-  binname: bin/tokei
-  visiblename: bin/tokei
-  version: 15.0.0
-  origversion: null
-  status: newest
-  maintainers:
-    - anton@samokhvalov.xyz
-  categories:
-    - bin
 - repo: termux
   srcname: tokei
   binname: tokei
